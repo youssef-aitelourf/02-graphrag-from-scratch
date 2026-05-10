@@ -1,3 +1,0 @@
-[console_scripts]
-graphrag-eval = graphrag_mvp.evaluate:main
-graphrag-index = graphrag_mvp.pipeline:main
