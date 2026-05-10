@@ -1,0 +1,49 @@
+[
+  {
+    "id": "q_incident_time",
+    "question": "How long did it take after the Meridian rollback during incident INC-2024-09 to restore throughput?",
+    "gold_substrings": ["41 minutes", "restored nominal throughput"],
+    "gold_match": "any"
+  },
+  {
+    "id": "q_who_sre",
+    "question": "Who leads the Platform SRE team responsible for Meridian on-call?",
+    "gold_substrings": ["Amélie Duarte", "Platform SRE"]
+  },
+  {
+    "id": "q_vex_latency_sla",
+    "question": "What is the VEX Cognition per-frame latency SLA mentioned for Nexus-400 embedded GPUs?",
+    "gold_substrings": ["18 ms", "latency"]
+  },
+  {
+    "id": "q_wavelength_rd",
+    "question": "What wavelength is Kenji Okada's group testing for the Helix successor in pedestrian zones?",
+    "gold_substrings": ["1550 nm"]
+  },
+  {
+    "id": "q_geofence_failure",
+    "question": "Why did Nexus drones loiter during INC-2024-09 in Marseille?",
+    "gold_substrings": ["VEX", "crane exclusion", "loiter"]
+  },
+  {
+    "id": "q_orbit_cities",
+    "question": "Which harbor cities have Orbit Logistics sites named in the corpus?",
+    "gold_substrings": ["Marseille", "Rotterdam"]
+  },
+  {
+    "id": "q_meridian_stack",
+    "question": "What orchestration infrastructure runs Meridian?",
+    "gold_substrings": ["Kubernetes"]
+  },
+  {
+    "id": "q_marco_helix",
+    "question": "During the Orbit incident discussion, who stated the Helix gateway masts were not at fault?",
+    "gold_substrings": ["Marco Silva", "Helix gateway masts"],
+    "gold_match": "all"
+  },
+  {
+    "id": "q_lidar_spec",
+    "question": "What is the RMSE calibration target at 10 m for Helix-LIDAR mini?",
+    "gold_substrings": ["2 cm RMSE", "10 m"]
+  }
+]

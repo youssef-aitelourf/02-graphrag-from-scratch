@@ -1,0 +1,6 @@
+Glossary for technicians:
+- Meridian: Acme control plane (missions, geofences, attestations).
+- Nexus-400: Indoor logistics quadcopter; uses VEX policy and Helix-LIDAR mini.
+- Helix-LIDAR mini: 905 nm lidar module; factory calibration target 2 cm RMSE @10 m.
+- Orbit: Harbor JV with sites Marseille and Rotterdam; uses Nexus + Helix masts.
+- INC-2024-09: Geofence regression in Marseille; fixed by Meridian r1842 rollback.

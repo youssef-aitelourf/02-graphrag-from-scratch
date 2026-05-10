@@ -1,0 +1,99 @@
+{
+  "ks": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "build_meta": {
+    "extraction": "heuristic",
+    "chunk_count": 15,
+    "ollama_model": "gpt-oss:120b",
+    "generated_at_note": "2026-05; toy corpus; reproduce with README commands"
+  },
+  "settings": {
+    "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "faiss_seed_k": 6,
+    "graph_max_depth": 2,
+    "graph_max_extra_chunks": 24,
+    "leiden_resolution": 1.0
+  },
+  "per_question": [
+    {
+      "id": "q_incident_time",
+      "gold_size": 2,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_who_sre",
+      "gold_size": 1,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_vex_latency_sla",
+      "gold_size": 2,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_wavelength_rd",
+      "gold_size": 1,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_geofence_failure",
+      "gold_size": 1,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_orbit_cities",
+      "gold_size": 2,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_meridian_stack",
+      "gold_size": 2,
+      "vanilla_rank_first_hit": 6,
+      "graph_rank_first_hit": 6
+    },
+    {
+      "id": "q_marco_helix",
+      "gold_size": 1,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    },
+    {
+      "id": "q_lidar_spec",
+      "gold_size": 2,
+      "vanilla_rank_first_hit": 1,
+      "graph_rank_first_hit": 1
+    }
+  ],
+  "vanilla": {
+    "mrr_mean": 0.9074074074074076,
+    "recall_at_k_mean": {
+      "1": 0.6666666666666666,
+      "3": 0.8888888888888888,
+      "5": 0.8888888888888888,
+      "10": 1.0
+    }
+  },
+  "graphrag_hybrid": {
+    "mrr_mean": 0.9074074074074076,
+    "recall_at_k_mean": {
+      "1": 0.6666666666666666,
+      "3": 0.8888888888888888,
+      "5": 0.8888888888888888,
+      "10": 1.0
+    }
+  },
+  "diagnosis": {
+    "status": "graphrag_meets_or_beats_vanilla",
+    "hint": ""
+  }
+}

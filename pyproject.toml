@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphrag-mvp"
+version = "0.1.0"
+description = "GraphRAG-style MVP: extraction, NetworkX, Leiden, Faiss hybrid retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "numpy>=1.24.0",
+    "networkx>=3.2",
+    "python-igraph>=0.11.0",
+    "sentence-transformers>=3.0.0",
+    "faiss-cpu>=1.8.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["graphrag_mvp*"]
+
+[project.scripts]
+graphrag-index = "graphrag_mvp.pipeline:main"
+graphrag-eval = "graphrag_mvp.evaluate:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

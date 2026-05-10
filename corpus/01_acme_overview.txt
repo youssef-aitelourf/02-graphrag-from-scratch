@@ -1,0 +1,13 @@
+Acme Robotics Corporation, headquartered in Toulouse, designs autonomous logistics systems for warehouses and seaports. The company was founded in 2010 and operates labs in Toulouse and Singapore. Acme is known for tight integration between hardware drones, edge sensors, and its flagship orchestration platform called Meridian.
+
+The Nexus-400 quadcopter is Acme's workhorse drone for indoor inventory scans. It carries a Helix-LIDAR mini module, reaches 3 m/s in open aisles, and reports telemetry over TLS 1.3 to the Meridian control plane. Battery swaps are standardized across the fleet.
+
+Platform Meridian runs on Kubernetes and schedules missions, geofences flight volumes, and aggregates anomaly alerts from Nexus units and stationary Helix gateways. The on-call rotation for Meridian is owned by the Platform SRE team led by Amélie Duarte.
+
+The Helix-LIDAR mini operates at 905 nm, produces 256 k points per second, and is calibrated in factory to within 2 cm RMSE at 10 m. Field service replaces Helix units quarterly in high-dust environments such as bulk grain silos adjacent to Orbit harbors.
+
+Orbit Logistics is Acme's joint venture with harbor operators in Marseille and Rotterdam. Orbit deployments pair Nexus-400 fleets with Helix gateway masts on quay cranes. Customs compliance reporting for Orbit is audited annually by an external firm.
+
+VEX Cognition supplies the collision-avoidance neural policy used on Nexus drones since firmware 7.x. VEX models are trained on anonymized telemetry from Meridian staging clusters. After a 2024 supply-chain scare, Acme pinned VEX artifacts with SHA-256 attestations stored in Meridian.
+
+Dr. Kenji Okada directs robotics perception; Priya Nair leads Meridian reliability; Marco Silva runs Orbit field operations. During incident INC-2024-09, a misconfigured geofence in Marseille caused Nexus units to loiter until Amélie Duarte rolled back Meridian config version r1842.

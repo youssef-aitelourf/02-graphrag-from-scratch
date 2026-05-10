@@ -1,0 +1,13 @@
+# Optional Neo4j for future production graph (MVP uses NetworkX only).
+# Start: docker compose up -d
+# Bolt: bolt://localhost:7687  user neo4j / password graphragdev
+# This repo does not wire Neo4j into the Python path yet; use py2neo or neo4j driver separately.
+
+services:
+  neo4j:
+    image: neo4j:5.15-community
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/graphragdev

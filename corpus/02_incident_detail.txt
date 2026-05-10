@@ -1,0 +1,5 @@
+In September 2024, incident INC-2024-09 affected Nexus-400 units at the Marseille Orbit site. Meridian release r1841 widened a geofence polygon into a crane exclusion zone. Nexus drones entered a loiter pattern because the VEX collision-avoidance policy refused forward motion near crane structures.
+
+Rollback to Meridian r1842 restored nominal throughput within 41 minutes. The Platform SRE postmortem states Priya Nair added a CI check blocking releases when polygon self-intersections are detected, after finding that r1841 slipped Canary because validation only covered rectangular fences.
+
+Marco Silva confirmed on the Orbit call that Helix gateway masts on quay cranes were not at fault: telemetry showed geofence vertices sent by Meridian mismatched approved crane CAD boundaries from supplier data.

@@ -1,0 +1,3 @@
+Internal finance memo FY2026-Q1 (non-public): Acme Robotics budgets 12 M EUR for Orbit expansion in Rotterdam and 4 M EUR for Helix sensor refresh cycles in dusty bulk-handling sites. Meridian SaaS gross margin is reported at 68 percent after Kubernetes and GPU inference costs for offline VEX evaluation jobs.
+
+Counterparty risk: VEX Cognition contract renewal is pegged to quarterly SLA on model latency under 18 ms per frame on Nexus-400 embedded GPUs. Termination clauses reference supply-chain attestations in Meridian's artifact registry.
